@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_flow_app"
+    app:startDestination="@id/consultCepFragment">
+
+    <fragment
+        android:id="@+id/consultCepFragment"
+        android:name="com.alex.app.getcepdataapp.cep.consult.ConsultCepFragment"
+        android:label="fragment_consult_cep"
+        tools:layout="@layout/fragment_consult_cep" >
+        <action
+            android:id="@+id/action_consultCepFragment_to_showResultDataCepFragment2"
+            app:destination="@id/showResultDataCepFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/showResultDataCepFragment"
+        android:name="com.alex.app.getcepdataapp.cep.result.ShowResultDataCepFragment"
+        android:label="fragment_show_result_data_cep"
+        tools:layout="@layout/fragment_show_result_data_cep" />
+</navigation>
