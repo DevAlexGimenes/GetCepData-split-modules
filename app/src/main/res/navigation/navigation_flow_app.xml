@@ -20,5 +20,9 @@
         android:id="@+id/showResultDataCepFragment"
         android:name="com.alex.app.getcepdataapp.cep.result.ShowResultDataCepFragment"
         android:label="fragment_show_result_data_cep"
-        tools:layout="@layout/fragment_show_result_data_cep" />
+        tools:layout="@layout/fragment_show_result_data_cep" >
+        <argument
+            android:name="cep"
+            app:argType="string" />
+    </fragment>
 </navigation>

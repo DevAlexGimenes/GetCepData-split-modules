@@ -23,10 +23,11 @@ class ConsultCepFragment : Fragment(R.layout.fragment_consult_cep) {
             if (cep.isEmpty() || cep.length < 8) {
                 txtInput.error = "Por favor, digite um cep válido!"
             } else {
-                findNavController().navigate(R.id.action_consultCepFragment_to_showResultDataCepFragment2)
-//                val action = ConsultCepFragmentDirections
-//                    .actionConsultCepFragmentToShowResultDataCepFragment2()
-//                findNavController().navigate(action)
+                val action = ConsultCepFragmentDirections
+                    .actionConsultCepFragmentToShowResultDataCepFragment2(
+                        cep = cep.toString()
+                    )
+                findNavController().navigate(action)
             }
         }
     }
