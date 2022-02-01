@@ -7,7 +7,7 @@ import com.alex.app.getcepdataapp.domain.repository.CepDataRepository
 import com.google.gson.Gson
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import org.koin.android.BuildConfig
+import com.alex.app.getcepdataapp.data.BuildConfig
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 import retrofit2.Retrofit

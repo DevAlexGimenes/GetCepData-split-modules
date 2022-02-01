@@ -8,7 +8,25 @@ import kotlinx.android.parcel.Parcelize
 data class CepInformation(
 
     @SerializedName("cep")
-    val cep: String? = ""
+    val cep: String? = "",
 
-) : Parcelable
+    @SerializedName("logradouro")
+    val street: String? = "",
+
+    @SerializedName("complemento")
+    val complement: String? = "",
+
+    @SerializedName("bairro")
+    val district: String? = "",
+
+    @SerializedName("localidade")
+    val location: String? = "",
+
+    @SerializedName("uf")
+    val city: String? = "",
+
+    @SerializedName("ddd")
+    val ddd: String? = "",
+
+    ) : Parcelable
 
