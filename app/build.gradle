@@ -52,7 +52,6 @@ dependencies {
     // Splash Screen
     implementation  'androidx.core:core-splashscreen:1.0.0-beta01'
 
-    // Lifecycle
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
 
@@ -74,4 +73,16 @@ dependencies {
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 
     implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
+    // ViewPage2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    // RoundedImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //Gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
+    //Circular image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }
