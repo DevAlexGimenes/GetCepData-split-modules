@@ -8,5 +8,5 @@ interface CepDataRemoteSource {
     @GET("{cep}/json")
     suspend fun getCepData(
         @Path("cep") cep: String
-    ) : CepInformation
+    ): CepInformation
 }
