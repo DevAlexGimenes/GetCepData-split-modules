@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Consulta de Cep</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_cep">CEP</string>
+    <string name="txt_voice_over_copiar_cep">Copiar cep</string>
+    <string name="txt_logradouro">Logradouro</string>
+    <string name="txt_voice_over_copiar_logradouro">Copiar logradouro</string>
+    <string name="txt_complemento">Complemento</string>
+    <string name="txt_voice_over_copiar_complemento">Copiar complemento</string>
+    <string name="txt_bairro">Bairro</string>
+    <string name="txt_voice_over_copiar_bairro">Copiar bairro</string>
+    <string name="txt_localidade">Localidade</string>
+    <string name="txt_voice_over_copiar_localidade">Copiar Localidade</string>
+    <string name="txt_uf">Uf</string>
+    <string name="txt_voice_over_copiar_cidade_uf">Copiar cidade - uf</string>
+    <string name="txt_ddd">DDD</string>
+    <string name="txt_voice_over_copiar_ddd">Copiar ddd</string>
+    <string name="txt_consulte">CONSULTE</string>
+    <string name="txt_voice_over_icone_casa">Icone casa</string>
+    <string name="txt_digite_o_cep">Digite o cep</string>
+    <string name="txt_voice_over_campo_de_informa_o">Campo de informação</string>
+    <string name="txt_informaçao">Para consultar o cep desejado, digite os 8 números do campo acima. Obs: Não precisa ser adicionado o traço!</string>
+    <string name="txt_consultar">Consultar</string>
+    <string name="txt_title_result">Resultado do Cep</string>
+    <string name="txt_success_copy">Copiado com sucesso! %1$s</string>
+    <string name="txt_error_copy">Erro ao copiar!</string>
+    <string name="txt_erro_notify">Erro!</string>
+    <string name="txt_desc_error">Não conseguimos processar as informações do cep digitado, por favor volte e tente novamente!</string>
+    <string name="txt_voice_over_icon_error">Erro ao carregar as informações</string>
+    <string name="txt_btn_voltar">Voltar</string>
+    <string name="txt_por_favor_aguarde">Por favor, aguarde</string>
+    <string name="txt_desc_loading">Estamos, carregando as informações do cep!</string>
+    <string name="txt_voice_over_loading_icon">Carregando suas informações</string>
+</resources>

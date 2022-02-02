@@ -1,5 +1,34 @@
 <resources>
-    <string name="app_name">GetCepDataApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Zip Code Consult</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_cep">Zip Code</string>
+    <string name="txt_voice_over_copiar_cep">Copy zip code</string>
+    <string name="txt_logradouro">Street</string>
+    <string name="txt_voice_over_copiar_logradouro">Copy street</string>
+    <string name="txt_complemento">Complement</string>
+    <string name="txt_voice_over_copiar_complemento">Copy complement</string>
+    <string name="txt_bairro">District</string>
+    <string name="txt_voice_over_copiar_bairro">Copy district</string>
+    <string name="txt_localidade">Location</string>
+    <string name="txt_voice_over_copiar_localidade">Copy location</string>
+    <string name="txt_uf">City</string>
+    <string name="txt_voice_over_copiar_cidade_uf">Copy city</string>
+    <string name="txt_ddd">DDD</string>
+    <string name="txt_voice_over_copiar_ddd">Copy ddd</string>
+    <string name="txt_consulte">Consult</string>
+    <string name="txt_voice_over_icone_casa">Icon house</string>
+    <string name="txt_digite_o_cep">Enter a zip code</string>
+    <string name="txt_voice_over_campo_de_informa_o">information field</string>
+    <string name="txt_informaçao">To check the desired zip code, enter the 8 numbers in the field above. Note: The dash does not need to be added!</string>
+    <string name="txt_consultar">Consult</string>
+    <string name="txt_title_result">Result of the zip code</string>
+    <string name="txt_success_copy">Success copy! %1$s</string>
+    <string name="txt_error_copy">Error when copying!</string>
+    <string name="txt_erro_notify">Error!</string>
+    <string name="txt_desc_error">We were not able to process the zip code information you entered, please come back and try again!</string>
+    <string name="txt_voice_over_icon_error">Error when loading information</string>
+    <string name="txt_btn_voltar">Back</string>
+    <string name="txt_por_favor_aguarde">Please, wait</string>
+    <string name="txt_desc_loading">We are uploading the zip code information!</string>
+    <string name="txt_voice_over_loading_icon">Loading your information</string>
 </resources>

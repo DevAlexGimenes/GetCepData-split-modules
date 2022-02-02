@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="CONSULTE"
+            android:text="@string/txt_consulte"
             android:textColor="#457B1A"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +25,7 @@
             android:id="@+id/imgIconHouse"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:contentDescription="@string/txt_voice_over_icone_casa"
             android:src="@drawable/ic_cep_house"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +35,7 @@
             android:id="@+id/subTitleConsult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CEP"
+            android:text="@string/txt_cep"
             android:textColor="#457B1A"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:hint="Digite o cep"
+                android:hint="@string/txt_digite_o_cep"
                 android:importantForAutofill="no"
                 android:inputType="number"
                 android:maxLength="8" />
@@ -68,6 +69,7 @@
             android:id="@+id/imgInformation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/txt_voice_over_campo_de_informa_o"
             android:src="@drawable/ic_information"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
@@ -80,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:gravity="center"
-            android:text="Para consultar o cep desejado, digite os 8 números do campo acima. Obs: Não precisa ser adicionado o traço!"
+            android:text="@string/txt_informaçao"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -97,7 +99,7 @@
             android:layout_marginEnd="35dp"
             android:backgroundTint="#3B631B"
             android:padding="10dp"
-            android:text="Consultar"
+            android:text="@string/txt_consultar"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -105,7 +107,5 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txtInfo" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
