@@ -6,22 +6,35 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.alex.app.getcepdataapp.R
+import com.alex.app.getcepdataapp.databinding.FragmentShowResultDataCepBinding
 import com.alex.app.getcepdataapp.domain.model.CepInformation
-import kotlinx.android.synthetic.main.fragment_show_result_data_cep.*
 import kotlinx.android.synthetic.main.notify_error.view.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ShowResultDataCepFragment : Fragment(R.layout.fragment_show_result_data_cep) {
 
+    private lateinit var binding: FragmentShowResultDataCepBinding
+
     private val viewModel: ShowResultDataCepViewModel by viewModel()
 
     private val args: ShowResultDataCepFragmentArgs by navArgs()
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentShowResultDataCepBinding.inflate(inflater)
+        return binding.root
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -30,6 +43,7 @@ class ShowResultDataCepFragment : Fragment(R.layout.fragment_show_result_data_ce
     }
 
     private fun prepareToolbar() {
+        val toolbar = binding.toolbar
         toolbar.title = getString(R.string.txt_title_result)
         toolbar.setTitleTextColor(Color.BLACK)
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back)
@@ -66,18 +80,18 @@ class ShowResultDataCepFragment : Fragment(R.layout.fragment_show_result_data_ce
     }
 
     private fun plotDataOnScreen(dataCep: CepInformation) {
-        txtCep.text = dataCep.cep
-        txtLogradouro.text = dataCep.street
-        txtComplemento.text = dataCep.complement
-        txtBairro.text = dataCep.district
-        txtLocalidade.text = dataCep.location
-        txtUf.text = dataCep.city
-        txtDdd.text = dataCep.ddd
+        binding.txtCep.text = dataCep.cep
+        binding.txtLogradouro.text = dataCep.street
+        binding.txtComplemento.text = dataCep.complement
+        binding.txtBairro.text = dataCep.district
+        binding.txtLocalidade.text = dataCep.location
+        binding.txtUf.text = dataCep.city
+        binding.txtDdd.text = dataCep.ddd
     }
 
     private fun copyData(dataCep: CepInformation) {
 
-        imgCopyCep.setOnClickListener {
+        binding.imgCopyCep.setOnClickListener {
             try {
                 val clipboard =
                     context?.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
@@ -95,7 +109,7 @@ class ShowResultDataCepFragment : Fragment(R.layout.fragment_show_result_data_ce
             }
         }
 
-        imgCopyStreet.setOnClickListener {
+        binding.imgCopyStreet.setOnClickListener {
             try {
                 val clipboard =
                     context?.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
@@ -113,7 +127,7 @@ class ShowResultDataCepFragment : Fragment(R.layout.fragment_show_result_data_ce
             }
         }
 
-        imgCopyComplement.setOnClickListener {
+        binding.imgCopyComplement.setOnClickListener {
             try {
                 val clipboard =
                     context?.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
@@ -131,7 +145,7 @@ class ShowResultDataCepFragment : Fragment(R.layout.fragment_show_result_data_ce
             }
         }
 
-        imgCopyDistrict.setOnClickListener {
+        binding.imgCopyDistrict.setOnClickListener {
             try {
                 val clipboard =
                     context?.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
@@ -149,7 +163,7 @@ class ShowResultDataCepFragment : Fragment(R.layout.fragment_show_result_data_ce
             }
         }
 
-        imgCopyLocation.setOnClickListener {
+        binding.imgCopyLocation.setOnClickListener {
             try {
                 val clipboard =
                     context?.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
@@ -167,7 +181,7 @@ class ShowResultDataCepFragment : Fragment(R.layout.fragment_show_result_data_ce
             }
         }
 
-        imgCopyCity.setOnClickListener {
+        binding.imgCopyCity.setOnClickListener {
             try {
                 val clipboard =
                     context?.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?
@@ -185,7 +199,7 @@ class ShowResultDataCepFragment : Fragment(R.layout.fragment_show_result_data_ce
             }
         }
 
-        imgCopyDdd.setOnClickListener {
+        binding.imgCopyDdd.setOnClickListener {
             try {
                 val clipboard =
                     context?.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager?

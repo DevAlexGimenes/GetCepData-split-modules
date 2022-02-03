@@ -1,25 +1,40 @@
 package com.alex.app.getcepdataapp.cep.consult
 
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.alex.app.getcepdataapp.R
-import kotlinx.android.synthetic.main.fragment_consult_cep.*
+import com.alex.app.getcepdataapp.databinding.FragmentConsultCepBinding
 
 
 class ConsultCepFragment : Fragment(R.layout.fragment_consult_cep) {
 
+    private lateinit var binding: FragmentConsultCepBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentConsultCepBinding.inflate(inflater)
+        return binding.root
+    }
+
     override fun onResume() {
         super.onResume()
         prepareComponents()
-        txtInput.text.clear()
+        binding.txtInput.text.clear()
     }
 
     private fun prepareComponents() {
-        val cep = txtInput.text
+        val cep = binding.txtInput.text
 
-        btnConsult.setOnClickListener {
+        binding.btnConsult.setOnClickListener {
             if (cep.isEmpty() || cep.length < 8) {
-                txtInput.error = "Por favor, digite um cep válido!"
+                binding.txtInput.error = "Por favor, digite um cep válido!"
             } else {
                 val action = ConsultCepFragmentDirections
                     .actionConsultCepFragmentToShowResultDataCepFragment2(
