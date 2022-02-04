@@ -30,6 +30,6 @@
     <string name="txt_voice_over_icon_error">Erro ao carregar as informações</string>
     <string name="txt_btn_voltar">Voltar</string>
     <string name="txt_por_favor_aguarde">Por favor, aguarde</string>
-    <string name="txt_desc_loading">Estamos, carregando as informações do cep!</string>
+    <string name="txt_desc_loading">Estamos carregando as informações do cep!</string>
     <string name="txt_voice_over_loading_icon">Carregando suas informações</string>
 </resources>
