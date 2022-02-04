@@ -25,9 +25,16 @@ class ShowResultDataCepViewModel(
                     cepDataUseCase.getCepData(cep)
                 }
                 cepDataLv.value = cepData
+                validateErrorIsTrueOnSuccess(cepData)
             } catch (e: Exception) {
                 notifyErrorLv.postValue(Unit)
             }
+        }
+    }
+
+    private fun validateErrorIsTrueOnSuccess(cepData: CepInformation) {
+        if (cepData.error == true) {
+            notifyErrorLv.postValue(Unit)
         }
     }
 }

@@ -28,5 +28,8 @@ data class CepInformation(
     @SerializedName("ddd")
     val ddd: String? = "",
 
+    @SerializedName("erro")
+    val error: Boolean? = false
+
     ) : Parcelable
 
